@@ -7,8 +7,8 @@ const LiIcon = ({ reference }) => {
     offset: ["center end", "start center"],
   });
   return (
-    <figure className="absolute left-0 stroke-dark">
-      <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
+    <figure className="absolute left-0">
+      <svg className="-rotate-90 stroke-dark" width="75" height="75" viewBox="0 0 100 100">
         <circle
           cx="75"
           cy="50"
