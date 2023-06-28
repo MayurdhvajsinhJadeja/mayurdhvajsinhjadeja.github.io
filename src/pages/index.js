@@ -104,7 +104,8 @@ export default function Home() {
                   <Link
                     href="mailto:mayurdhvajsinhjadeja123@gmail.com"
                     target={"_blank"}
-                    className="ml-4 text-lg font-semibold capitalize text-dark underline"
+                    className="flex items-center bg-light text-dark p-1.5 mx-2 px-10 rounded-lg text-lg font-semibold
+                    hover:bg-dark hover:text-light border-2 border-solid border-dark hover:border-light"
                   >
                     Contact
                   </Link>
