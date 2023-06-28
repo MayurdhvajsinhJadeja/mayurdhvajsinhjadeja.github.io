@@ -10,6 +10,7 @@ const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-mont",
 });
+
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   return (

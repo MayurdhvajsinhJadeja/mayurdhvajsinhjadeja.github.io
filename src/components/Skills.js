@@ -3,7 +3,7 @@ import Layout from "./Layout";
 
 const cardVariants = {
   offscreen: {
-    y: 60,
+    y: 100,
   },
   onscreen: {
     y: 0,

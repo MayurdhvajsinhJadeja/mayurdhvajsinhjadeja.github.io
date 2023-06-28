@@ -5,7 +5,6 @@ const projects = () => {
   return (
     <>
         <TransitionEffect/>
-        <div>projects</div>
     </>
   )
 }

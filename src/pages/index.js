@@ -36,10 +36,11 @@ export default function Home() {
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen">
-        <Layout classname="pt-0 ">
-          <div className="flex w-full items-center p-16 pt-0">
+        <Layout classname="pt-0">
+          <div className="flex w-full items-center pt-0 pb-0">
             <div className="w-1/5">
               <Image
+                priority
                 src={profilePic}
                 alt="Mayurdhvaj"
                 className="w-full height-auto border-solid shadow-2xl border-4 border-dark rounded-full"
@@ -47,8 +48,8 @@ export default function Home() {
             </div>
             <div id="hero" className="hero-section w-4/5 mb-6 ml-4 mr-0">
               <div className="container">
-                <h2 className="hero-title text-5xl leading-normal">
-                  Hi, I am{" "}
+                <h2 className="hero-title text-6xl leading-normal">
+                  Hi, I&apos;m{" "}
                   {showMayurdhvaj ? (
                     <TypeAnimation
                       sequence={["Mayurdhvajsinh Jadeja."]}

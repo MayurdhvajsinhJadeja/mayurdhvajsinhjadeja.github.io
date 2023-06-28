@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import LiIcon from "../components/LiIcon";
-import Layout from "../components/Layout";
+import LiIcon from "./LiIcon";
+import Layout from "./Layout";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
@@ -31,7 +31,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
   );
 };
 
-const Experience = () => {
+const Education = () => {
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -43,7 +43,7 @@ const Experience = () => {
         <div className="my-8 w-full">
           <div className="flex flex-col items-start justify-start">
             <h2 className="mb-4 text-6xl font-bold uppercase text-dark/75">
-              Experience
+              Education
             </h2>
             <div ref={ref} className="w-[75%] mx-auto relative">
               <motion.div
@@ -110,4 +110,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Education;

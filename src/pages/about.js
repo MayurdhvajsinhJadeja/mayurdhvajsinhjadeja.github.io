@@ -1,3 +1,4 @@
+import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Layout from "@/components/Layout";
 import Skills from "@/components/Skills";
@@ -59,13 +60,14 @@ const about = () => {
                 functionality and aesthetics.
               </p>
               <p className="font-medium text-lg">
-              Feel free to explore my portfolio and get in touch!
+                Feel free to explore my portfolio and get in touch!
               </p>
             </div>
           </div>
         </Layout>
       </main>
       <Skills />
+      <Education />
       <Experience />
     </>
   );
