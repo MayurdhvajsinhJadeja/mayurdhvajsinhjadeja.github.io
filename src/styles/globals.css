@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-title,
+.hero-description {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  color: #616161;
+}
+
+
+.hero-description {
+  color: #616161; /*Change the color to your desired shade of black*/
+}
+
+.typed-text {
+  display: inline-block;
+}
+
+.cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2px;
+  height: 0.8em;
+  margin-left: 2px;
+  background-color: black;
+  opacity: 1;
+  animation: blink 0.7s infinite;
+}
+
+.cursor.visible {
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.card {
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 25px;
+  box-shadow: 0 0 1px hsl(0deg 0% 0% / 0.075), 0 0 2px hsl(0deg 0% 0% / 0.075),
+    0 0 4px hsl(0deg 0% 0% / 0.075), 0 0 8px hsl(0deg 0% 0% / 0.075),
+    0 0 16px hsl(0deg 0% 0% / 0.075);
+  /* transform-origin: 10% 60%; */
+}
+
+.card-container {
+  /* margin: 0 10px; */
+  margin-bottom: 20px;
+}
