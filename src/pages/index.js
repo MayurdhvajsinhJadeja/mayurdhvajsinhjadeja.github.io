@@ -4,7 +4,7 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 // import './hero.css';
-import profilePic from "../../public/images/profile/WhatsApp_Image_2023-06-26_at_17.44.54-removebg-preview.png";
+import profilePic from "../../public/images/profile/MayurdhvajProfile.png";
 import Link from "next/link";
 import { LinkArrow } from "../../public/All-Texts/Icons";
 import TransitionEffect from "@/components/TransitionEffect";
@@ -36,18 +36,18 @@ export default function Home() {
       </Head>
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen">
-        <Layout classname="pt-0">
-          <div className="flex items-center justify-between w-full">
+        <Layout classname="pt-0 ">
+          <div className="flex w-full items-center p-32 pt-0">
             <div className="w-1/5">
               <Image
                 src={profilePic}
                 alt="Mayurdhvaj"
-                className="w-full height-auto"
+                className="w-full height-auto border-solid shadow-2xl border-4 border-dark rounded-full"
               />
             </div>
-            <div id="hero" className="hero-section w-4/5">
+            <div id="hero" className="hero-section w-4/5 ml-8 mb-6">
               <div className="container ">
-                <h2 className="hero-title text-6xl">
+                <h2 className="hero-title text-5xl leading-normal">
                   Hi, I am{" "}
                   {showMayurdhvaj ? (
                     <TypeAnimation
@@ -66,7 +66,7 @@ export default function Home() {
                 <h3
                   className={`hero-description ${
                     showWebDev ? "show" : ""
-                  } text-5xl`}
+                  } text-[52px]`}
                 >
                   I am passionate about{" "}
                   {showWebDev ? (
