@@ -48,19 +48,9 @@ const Education = () => {
             <div ref={ref} className="w-[75%] mx-auto relative">
               <motion.div
                 style={{ scaleY: scrollYProgress }}
-                className="absolute left-[35px] top-1 w-[4px] h-full bg-dark origin-top"
+                className="absolute left-[35px] top-1 w-[4px] h-[650px] bg-dark origin-top"
               />
               <ul className="w-full flex flex-col items-start justify-between ml-4">
-                <Details
-                  position="Software Engineer"
-                  company="Google"
-                  companyLink="www.google.com"
-                  time="2022-Present"
-                  address="Mountain View, CA"
-                  work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
-                />
                 <Details
                   position="Software Engineer"
                   company="Google"
