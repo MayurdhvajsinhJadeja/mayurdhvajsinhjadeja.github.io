@@ -37,7 +37,7 @@ export default function Home() {
       <TransitionEffect />
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout classname="pt-0 ">
-          <div className="flex w-full items-center p-32 pt-0">
+          <div className="flex w-full items-center p-16 pt-0">
             <div className="w-1/5">
               <Image
                 src={profilePic}
@@ -45,8 +45,8 @@ export default function Home() {
                 className="w-full height-auto border-solid shadow-2xl border-4 border-dark rounded-full"
               />
             </div>
-            <div id="hero" className="hero-section w-4/5 ml-8 mb-6">
-              <div className="container ">
+            <div id="hero" className="hero-section w-4/5 mb-6 ml-4 mr-0">
+              <div className="container">
                 <h2 className="hero-title text-5xl leading-normal">
                   Hi, I am{" "}
                   {showMayurdhvaj ? (
@@ -66,7 +66,7 @@ export default function Home() {
                 <h3
                   className={`hero-description ${
                     showWebDev ? "show" : ""
-                  } text-[52px]`}
+                  } text-4xl`}
                 >
                   I am passionate about{" "}
                   {showWebDev ? (
