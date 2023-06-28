@@ -38,12 +38,15 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout classname="pt-0">
           <div className="flex w-full items-center pt-0 pb-0">
-            <div className="w-1/5">
+            <div className= " flex justify-center align-middle items-center w-40 h-40 dark:border-white bg-zinc-500 border-dark rounded-full border-4">
+              {/* <div className="w-full bg-white"></div> */}
               <Image
                 priority
                 src={profilePic}
                 alt="Mayurdhvaj"
-                className="w-full height-auto border-solid shadow-2xl border-4 border-dark rounded-full"
+                // className=" w-11/12  height-11/12 shadow-2xl border-4 border-double border-dark rounded-full dark:border-white"
+                className=" w-11/12  height-auto  rounded-full"
+
               />
             </div>
             <div id="hero" className="hero-section w-4/5 mb-6 ml-4 mr-0">
@@ -54,12 +57,12 @@ export default function Home() {
                     <TypeAnimation
                       sequence={["Mayurdhvajsinh Jadeja."]}
                       wrapper="span"
+                      className="dark:text-light text-dark"
                       cursor={cursorVisible}
                       style={{
                         display: "inline-block",
                         fontWeight: "bold",
                         fontStyle: "italic",
-                        color: "#000",
                       }}
                     />
                   ) : null}
@@ -67,7 +70,7 @@ export default function Home() {
                 <h3
                   className={`hero-description ${
                     showWebDev ? "show" : ""
-                  } text-4xl`}
+                  } text-5xl`}
                 >
                   I am passionate about{" "}
                   {showWebDev ? (
@@ -82,12 +85,12 @@ export default function Home() {
                       ]}
                       wrapper="span"
                       cursor={cursorVisible}
+                      className="dark:text-light text-dark"
                       repeat={Infinity}
                       style={{
                         display: "inline-block",
                         fontWeight: "bold",
                         fontStyle: "italic",
-                        color: "#000",
                       }}
                     />
                   ) : null}
@@ -97,7 +100,8 @@ export default function Home() {
                     href="/Resume-Mayurdhvajsinh-Jadeja.pdf"
                     target={"_blank"}
                     className="flex items-center bg-dark text-light p-1.5 px-6 rounded-lg text-lg font-semibold
-                  hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark"
+                  hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark 
+                  dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light"
                   >
                     Resume
                     <LinkArrow className={"w-6 ml-1"} />
@@ -106,7 +110,8 @@ export default function Home() {
                     href="mailto:mayurdhvajsinhjadeja123@gmail.com"
                     target={"_blank"}
                     className="flex items-center bg-light text-dark p-1.5 mx-2 px-10 rounded-lg text-lg font-semibold
-                    hover:bg-dark hover:text-light border-2 border-solid border-dark hover:border-light"
+                    hover:bg-dark hover:text-light border-2 border-solid border-dark hover:border-light
+                    dark:bg-dark dark:text-light dark:hover:bg-light dark:hover:text-dark dark:border-light dark:hover:border-dark"
                   >
                     Contact
                   </Link>

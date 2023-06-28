@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
-import LiIcon from "../components/LiIcon";
-import Layout from "../components/Layout";
+import LiIcon from "./LiIcon";
+import Layout from "./Layout";
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
