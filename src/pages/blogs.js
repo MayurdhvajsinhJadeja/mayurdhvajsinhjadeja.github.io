@@ -1,13 +1,18 @@
-import TransitionEffect from '@/components/TransitionEffect'
-import React from 'react'
+import Blogs from "@/components/Blogs";
+import TransitionEffect from "@/components/TransitionEffect";
+import Head from "next/head";
+import React from "react";
 
 const blogs = () => {
   return (
     <>
-        <TransitionEffect/>
-        <div>blogs</div>
+      <TransitionEffect />
+      <Head>
+        <title>Mayurdhvaj | Blogs</title>
+      </Head>
+      <Blogs/>
     </>
-  )
-}
+  );
+};
 
-export default blogs
+export default blogs;

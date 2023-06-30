@@ -4,22 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import llogo from "../../public/images/profile/logo-white.png";
 import dlogo from "../../public/images/profile/logo-black.png";
-import { use, useEffect, useState } from "react";
 
 const MotionLink = motion(Link);
 
-const Logo = ({mode}) => {
-  // useEffect(() => {
-  //   const userPref = window.localStorage.getItem("theme");
-  //   const logo = window.document.getElementById("darklogo")
-  //   if (userPref === "dark") {
-  //     logo.remove();
-  //   } else {
-  //     document.documentElement.remove("darklogo");
-  //   }
-  // });
-  // const [mode] = useThemeSwitcher();
-  
+const Logo = ({ mode }) => {
   return (
     <div className="flex items-center absolute left-[5%]">
       <MotionLink
@@ -32,22 +20,12 @@ const Logo = ({mode}) => {
           scale: 1.1,
         }}
       >
-        {/* checking dark theme or light and accordingly showing logo */}
 
-
-
-        {mode==='light' &&
-        <div className="lightlogo dark:opacity-0">
-        <Image src={llogo} width={25} alt="MJ" />
-      </div>
-        }
         {
-          mode==='dark' &&
-          <div id="darklogo">
-          <Image src={dlogo} width={25} alt="MJ" />
-        </div>
+          mode === "light"
+          ? <div><Image src={llogo} width={25} alt="MJ" /></div>
+          : <div><Image src={dlogo} width={25} alt="MJ" /></div>
         }
-        
       </MotionLink>
     </div>
   );

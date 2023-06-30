@@ -28,18 +28,18 @@ const CustomLink = ({ href, title, className = "" }) => {
 const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center bg-dark/5 text-xl dark:bg-white/5 dark:text-white">
+    <header className="backdrop-filter backdrop-blur-lg bg-opacity-30 w-full px-32 py-8 font-medium flex items-center sticky top-0 z-10 bg-white dark:text-light border-b border-black/75 dark:border-white/75 dark:bg-dark dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-30">
       <Logo mode = {mode}  />
-      <nav className="absolute left-[65%]">
+      <nav className="absolute left-[71%]">
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
         <CustomLink href="/projects" title="Projects" className="mx-4" />
         <CustomLink href="/blogs" title="Blogs" className="mx-4" />
       </nav>
-      <nav className="absolute left-[89%]">
+      <nav className="absolute left-[93%]">
         <button
           onClick={() => setMode(mode === "light" ? "dark" : "light")}
-          className="hover:bg-gray-400/30 p-1 rounded-full flex items-center ml-4"
+          className="hover:bg-gray-400/30 p-1 rounded-full flex items-center"
         >
           {mode === "dark" ? (
             <SunIcon className={"fill-dark"} />

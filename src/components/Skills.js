@@ -22,7 +22,7 @@ const Skills = () => {
       <Layout classname="pt-0">
         <div className="my-8 w-full">
           <div className="flex flex-col">
-            <h2 className="mb-4 text-6xl font-bold uppercase text-dark/75">
+            <h2 className="mb-4 text-6xl font-bold uppercase text-dark/75 dark:text-light pb-6">
               Skills
             </h2>
             <motion.div

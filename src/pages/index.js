@@ -8,6 +8,11 @@ import profilePic from "../../public/images/profile/MayurdhvajProfile.png";
 import Link from "next/link";
 import { LinkArrow } from "../../public/All-Texts/Icons";
 import TransitionEffect from "@/components/TransitionEffect";
+import About from "@/components/About";
+import Skills from "@/components/Skills";
+import Education from "@/components/Education";
+import Experience from "@/components/Experience";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   const [showMayurdhvaj, setShowMayurdhvaj] = useState(false);
@@ -38,7 +43,7 @@ export default function Home() {
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout classname="pt-0">
           <div className="flex w-full items-center pt-0 pb-0">
-            <div className= " flex justify-center align-middle items-center w-40 h-40 dark:border-white bg-zinc-500 border-dark rounded-full border-4">
+            <div className=" flex justify-center align-middle items-center w-60 h-60 dark:border-white bg-zinc-500 border-dark rounded-full border-4">
               {/* <div className="w-full bg-white"></div> */}
               <Image
                 priority
@@ -46,12 +51,11 @@ export default function Home() {
                 alt="Mayurdhvaj"
                 // className=" w-11/12  height-11/12 shadow-2xl border-4 border-double border-dark rounded-full dark:border-white"
                 className=" w-11/12  height-auto  rounded-full"
-
               />
             </div>
             <div id="hero" className="hero-section w-4/5 mb-6 ml-4 mr-0">
               <div className="container">
-                <h2 className="hero-title text-6xl leading-normal">
+                <h2 className="text-dark/75 dark:text-light/75 text-6xl leading-normal">
                   Hi, I&apos;m{" "}
                   {showMayurdhvaj ? (
                     <TypeAnimation
@@ -68,7 +72,7 @@ export default function Home() {
                   ) : null}
                 </h2>
                 <h3
-                  className={`hero-description ${
+                  className={`text-dark/75 dark:text-light/75 ${
                     showWebDev ? "show" : ""
                   } text-5xl`}
                 >
@@ -121,6 +125,10 @@ export default function Home() {
           </div>
         </Layout>
       </main>
+      {/* <About />
+      <Skills />
+      <Education />
+      <Experience /> */}
     </>
   );
 }

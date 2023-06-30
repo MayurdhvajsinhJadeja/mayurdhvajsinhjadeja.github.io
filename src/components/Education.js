@@ -12,7 +12,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
     >
       <LiIcon reference={ref}/>
       <div>
-        <h3 className="capitalize font-bold text-2xl">
+        <h3 className="capitalize font-bold text-2xl dark:text-light">
           {position}&nbsp;
           <a
             href={companyLink}
@@ -22,10 +22,10 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
-        <p className="font-medium w-full">{work}</p>
+        <p className="font-medium w-full dark:text-light">{work}</p>
       </div>
     </li>
   );
@@ -42,13 +42,13 @@ const Education = () => {
       <Layout classname="pt-0">
         <div className="my-8 w-full">
           <div className="flex flex-col items-start justify-start">
-            <h2 className="mb-4 text-6xl font-bold uppercase text-dark/75">
+            <h2 className="mb-10 text-6xl font-bold uppercase text-dark/75 dark:text-light">
               Education
             </h2>
             <div ref={ref} className="w-[75%] mx-auto relative">
               <motion.div
                 style={{ scaleY: scrollYProgress }}
-                className="absolute left-[35px] top-1 w-[4px] h-[650px] bg-dark origin-top"
+                className="absolute left-[35px] top-1 w-[4px] h-[650px] bg-dark origin-top dark:bg-light"
               />
               <ul className="w-full flex flex-col items-start justify-between ml-4">
                 <Details
@@ -62,6 +62,16 @@ const Education = () => {
                 developing new tools for data analysis and visualization."
                 />
                 
+                <Details
+                  position="Software Engineer"
+                  company="Google"
+                  companyLink="www.google.com"
+                  time="2022-Present"
+                  address="Mountain View, CA"
+                  work="Worked on a team responsible for developing new features for Google's 
+                search engine, including improving the accuracy and relevance of search results and 
+                developing new tools for data analysis and visualization."
+                />
                 <Details
                   position="Software Engineer"
                   company="Google"

@@ -19,7 +19,7 @@ const LiIcon = ({ reference }) => {
           cx="75"
           cy="50"
           r="20"
-          className="stroke-[4px] fill-white stroke-dark"
+          className="stroke-[4px] fill-white stroke-dark dark:fill-black dark:stroke-light"
           style={{
             pathLength: scrollYProgress,
           }}

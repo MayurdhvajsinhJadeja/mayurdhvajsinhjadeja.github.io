@@ -2,19 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero-title,
-.hero-description {
-  overflow: hidden;
-  white-space: nowrap;
-  margin: 0;
-  padding: 0;
-  color: #616161;
-}
-
-
-.hero-description {
-  color: #616161; /*Change the color to your desired shade of black*/
-}
 
 .typed-text {
   display: inline-block;
