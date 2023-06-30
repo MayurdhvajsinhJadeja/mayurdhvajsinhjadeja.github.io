@@ -13,6 +13,7 @@ const about = () => {
       <Head>
         <title>Mayurdhvaj | About</title>
       </Head>
+      
       <About />
       <Skills />
       <Education />

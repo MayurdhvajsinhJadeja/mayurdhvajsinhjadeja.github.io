@@ -7,8 +7,9 @@ import { MoonIcon, SunIcon } from "../../public/All-Texts/Icons";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
+  
   return (
-    <Link href={href} className={`${className} relative group`}>
+    <Link href={href} className={`${className} relative group`} scroll={false}>
       {title}
 
       <span
@@ -29,7 +30,7 @@ const Navbar = () => {
   const [mode, setMode] = useThemeSwitcher();
   return (
     <header className="backdrop-filter backdrop-blur-lg bg-opacity-30 w-full px-32 py-8 font-medium flex items-center sticky top-0 z-10 bg-white dark:text-light border-b border-black/75 dark:border-white/75 dark:bg-dark dark:backdrop-filter dark:backdrop-blur-lg dark:bg-opacity-30">
-      <Logo mode = {mode}  />
+      <Logo mode={mode} />
       <nav className="absolute left-[71%]">
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
@@ -43,8 +44,8 @@ const Navbar = () => {
         >
           {mode === "dark" ? (
             <SunIcon className={"fill-dark"} />
-            ) : (
-              <MoonIcon className={"fill-dark"} />
+          ) : (
+            <MoonIcon className={"fill-dark"} />
           )}
         </button>
       </nav>
@@ -59,3 +60,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

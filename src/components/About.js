@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from './Layout'
 
 const About = () => {
+  
   return (
     <main className="flex w-full h-screen flex-col items-center justify-center">
         <Layout classname="pt-8">
