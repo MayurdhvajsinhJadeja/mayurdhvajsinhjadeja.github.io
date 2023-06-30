@@ -54,6 +54,7 @@ const About = () => {
                 Feel free to explore my portfolio and get in touch!
               </p>
             </div>
+            
           </div>
         </Layout>
       </main>

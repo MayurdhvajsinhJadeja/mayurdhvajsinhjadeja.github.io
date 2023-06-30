@@ -55,3 +55,52 @@
 }
 
 
+.scroll-down2{
+  width: 30px;
+  height: 50px;
+  border: 2px solid #7a7a7a;
+  border-radius: 50px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: top 0.3s;
+}
+.scroll-down2:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    transform: translateX(-50%);
+    background: #7a7a7a;
+    animation: scrollDown2 1.5s ease infinite;
+}
+.scroll-down2:after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    width: 6px;
+    height: 15px;
+    border-radius: 3px;
+    transform: translateX(-50%);
+    background: #7a7a7a;
+}
+
+
+@keyframes scrollDown2{
+  0%{
+      transform: translate(-50%, 0px);
+      opacity: 0;
+  }
+  50%{
+      transform: translate(-50%, 8px);
+      opacity: 1;
+  }
+  100%{
+      transform: translate(-50%, 16px);
+      opacity: 0;
+  }
+}
