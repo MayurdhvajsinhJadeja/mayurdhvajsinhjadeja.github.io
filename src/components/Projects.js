@@ -63,7 +63,7 @@ const Projects = () => {
                       transition={{ type: "spring", bounce: 0.4 }}
                     >
                       <a
-                        href={`https://github.com/MayurdhvajsinhJadeja/`}
+                        href={`https://github.com/MayurdhvajsinhJadeja/KanhaSays`}
                         target="_blank"
                       >
                         View on Github
@@ -118,7 +118,7 @@ const Projects = () => {
                       transition={{ type: "spring", bounce: 0.4 }}
                     >
                       <a
-                        href={`https://github.com/MayurdhvajsinhJadeja/`}
+                        href={`https://github.com/MayurdhvajsinhJadeja/Baatein`}
                         target="_blank"
                       >
                         View on Github
@@ -173,7 +173,7 @@ const Projects = () => {
                       transition={{ type: "spring", bounce: 0.4 }}
                     >
                       <a
-                        href={`https://github.com/MayurdhvajsinhJadeja/`}
+                        href={`https://github.com/MayurdhvajsinhJadeja/Sign-to-Text-Converter`}
                         target="_blank"
                       >
                         View on Github
@@ -225,7 +225,7 @@ const Projects = () => {
                       transition={{ type: "spring", bounce: 0.4 }}
                     >
                       <a
-                        href={`https://github.com/MayurdhvajsinhJadeja/`}
+                        href={`https://github.com/MayurdhvajsinhJadeja/Alumni-Portal`}
                         target="_blank"
                       >
                         View on Github
