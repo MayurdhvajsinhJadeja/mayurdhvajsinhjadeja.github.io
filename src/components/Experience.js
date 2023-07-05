@@ -10,17 +10,10 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
       ref={ref}
       className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
     >
-      <LiIcon reference={ref}/>
+      <LiIcon reference={ref} />
       <div>
         <h3 className="capitalize font-bold text-2xl dark:text-light">
-          {position}&nbsp;
-          <a
-            href={companyLink}
-            target="_blank"
-            className="capitalize text-blue-700"
-          >
-            @{company}
-          </a>
+          {position}&nbsp;<p className="capitalize text-blue-700">@{company}</p>
         </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
@@ -48,58 +41,24 @@ const Experience = () => {
             <div ref={ref} className="w-[75%] mx-auto relative">
               <motion.div
                 style={{ scaleY: scrollYProgress }}
-                className="absolute left-[35px] top-1 w-[4px] h-full bg-dark origin-top dark:bg-light"
+                className="absolute left-[35px] top-1 w-[4px] h-[310px] bg-dark origin-top dark:bg-light"
               />
               <ul className="w-full flex flex-col items-start justify-between ml-4">
                 <Details
-                  position="Software Engineer"
-                  company="Google"
-                  companyLink="www.google.com"
-                  time="2022-Present"
-                  address="Mountain View, CA"
-                  work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+                  position="Backend Developer"
+                  company="ZURU Tech"
+                  time="May 2023 - July 2023"
+                  address="Unknown Location"
+                  work="Worked on server-side logic, created REST APIs, worked with databases,
+                    collaborated with cross-functional teams, and troubleshooted and debugged issues."
                 />
                 <Details
-                  position="Software Engineer"
-                  company="Google"
-                  companyLink="www.google.com"
-                  time="2022-Present"
-                  address="Mountain View, CA"
-                  work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
-                />
-                <Details
-                  position="Software Engineer"
-                  company="Google"
-                  companyLink="www.google.com"
-                  time="2022-Present"
-                  address="Mountain View, CA"
-                  work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
-                />
-                <Details
-                  position="Software Engineer"
-                  company="Google"
-                  companyLink="www.google.com"
-                  time="2022-Present"
-                  address="Mountain View, CA"
-                  work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
-                />
-                <Details
-                  position="Software Engineer"
-                  company="Google"
-                  companyLink="www.google.com"
-                  time="2022-Present"
-                  address="Mountain View, CA"
-                  work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+                  position="Data Analyst"
+                  company="Technocolabs Softwares"
+                  time="May 2022 - June 2022"
+                  address="Unknown Location"
+                  work="Completed a minor project on Bigmart sales prediction and a major project on H1B visa approval prediction.
+                    Developed skills in exploratory data analysis, feature engineering, machine learning model building, and deployment on live server."
                 />
               </ul>
             </div>

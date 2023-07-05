@@ -3,24 +3,18 @@ import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 import Layout from "./Layout";
 
-const Details = ({ position, company, companyLink, time, address, work }) => {
+const Details = ({ position, company, time, address, work }) => {
   const ref = useRef(null);
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-[60%] mx-auto flex flex-col items-start justify-between"
     >
-      <LiIcon reference={ref}/>
+      <LiIcon reference={ref} />
       <div>
         <h3 className="capitalize font-bold text-2xl dark:text-light">
           {position}&nbsp;
-          <a
-            href={companyLink}
-            target="_blank"
-            className="capitalize text-blue-700"
-          >
-            @{company}
-          </a>
+          <p className="capitalize text-blue-700">@{company}</p>
         </h3>
         <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
@@ -48,49 +42,29 @@ const Education = () => {
             <div ref={ref} className="w-[75%] mx-auto relative">
               <motion.div
                 style={{ scaleY: scrollYProgress }}
-                className="absolute left-[35px] top-1 w-[4px] h-[650px] bg-dark origin-top dark:bg-light"
+                className="absolute left-[35px] top-1 w-[4px] h-[380px] bg-dark origin-top dark:bg-light"
               />
-              <ul className="w-full flex flex-col items-start justify-between ml-4">
+              <ul className="w-full flex flex-col items-start justify-start ml-4">
                 <Details
-                  position="Software Engineer"
-                  company="Google"
-                  companyLink="www.google.com"
-                  time="2022-Present"
-                  address="Mountain View, CA"
-                  work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
-                />
-                
-                <Details
-                  position="Software Engineer"
-                  company="Google"
-                  companyLink="www.google.com"
-                  time="2022-Present"
-                  address="Mountain View, CA"
-                  work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+                  position="Bachelor of Technology"
+                  company="Marwadi University"
+                  time="2020 - 2024 (Currently Pursuing)"
+                  address="Rajkot, Gujarat, India"
+                  work="CGPA: 8.07"
                 />
                 <Details
-                  position="Software Engineer"
-                  company="Google"
-                  companyLink="www.google.com"
-                  time="2022-Present"
-                  address="Mountain View, CA"
-                  work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+                  position="Higher Secondary School"
+                  company="BAPS Swaminarayan Vidyamandir"
+                  time="2019 - 2020"
+                  address="Gondal, Gujarat, India"
+                  work="Completed higher secondary education."
                 />
                 <Details
-                  position="Software Engineer"
-                  company="Google"
-                  companyLink="www.google.com"
-                  time="2022-Present"
-                  address="Mountain View, CA"
-                  work="Worked on a team responsible for developing new features for Google's 
-                search engine, including improving the accuracy and relevance of search results and 
-                developing new tools for data analysis and visualization."
+                  position="Secondary School"
+                  company="BAPS Swaminarayan Vidyamandir"
+                  time="2017 - 2018"
+                  address="Gondal, Gujarat, India"
+                  work="Completed secondary education."
                 />
               </ul>
             </div>

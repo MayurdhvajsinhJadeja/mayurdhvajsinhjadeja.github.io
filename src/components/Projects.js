@@ -16,10 +16,10 @@ const Projects = () => {
               My Projects
             </h2>
             <div className="flex flex-wrap justify-between">
-              <motion.div
+              <div
                 className="relative dark:bg-light bg-dark shadow-md border border-gray-950 dark:border-gray-200 rounded-lg max-w-sm max-h-[580px] mb-5 flex flex-col"
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", bounce: 0.4 }}
+                // whileHover={{ scale: 1.1 }}
+                // transition={{ type: "spring", bounce: 0.4 }}
               >
                 <div className="relative rounded-t-lg overflow-hidden min-h-[200px]">
                   <Image
@@ -53,12 +53,12 @@ const Projects = () => {
                     </li>
                   </ul>
                   <motion.div
-                    className="hover:cursor-default flex justify-center items-center h-full absolute inset-0 bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
+                    className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: 1 }}
                   >
                     <motion.p
-                      className=" hover:cursor-pointer rounded-lg bg-light p-2 px-8 text-dark text-xl font-bold"
+                      className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
                       whileHover={{ scale: 1.1 }}
                       transition={{ type: "spring", bounce: 0.4 }}
                     >
@@ -71,11 +71,11 @@ const Projects = () => {
                     </motion.p>
                   </motion.div>
                 </div>
-              </motion.div>
+              </div>
               <motion.div
                 className="relative dark:bg-light bg-dark shadow-md border border-gray-950 dark:border-gray-200 rounded-lg max-w-sm max-h-[580px] mb-5 flex flex-col"
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", bounce: 0.4 }}
+                // whileHover={{ scale: 1.1 }}
+                // transition={{ type: "spring", bounce: 0.4 }}
               >
                 <div className="relative rounded-t-lg overflow-hidden min-h-[200px]">
                   <Image
@@ -108,12 +108,12 @@ const Projects = () => {
                     </li>
                   </ul>
                   <motion.div
-                    className="hover:cursor-default flex justify-center items-center h-full absolute inset-0 bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
+                    className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: 1 }}
                   >
                     <motion.p
-                      className=" hover:cursor-pointer rounded-lg bg-light p-2 px-8 text-dark text-xl font-bold"
+                      className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
                       whileHover={{ scale: 1.1 }}
                       transition={{ type: "spring", bounce: 0.4 }}
                     >
@@ -130,8 +130,8 @@ const Projects = () => {
 
               <motion.div
                 className="relative dark:bg-light bg-dark shadow-md border border-gray-950 dark:border-gray-200 rounded-lg max-w-sm max-h-[580px] mb-5 flex flex-col"
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", bounce: 0.4 }}
+                // whileHover={{ scale: 1.1 }}
+                // transition={{ type: "spring", bounce: 0.4 }}
               >
                 <div className="relative rounded-t-lg overflow-hidden min-h-[200px]">
                   <Image
@@ -163,12 +163,12 @@ const Projects = () => {
                     </li>
                   </ul>
                   <motion.div
-                    className="hover:cursor-default flex justify-center items-center h-full absolute inset-0 bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
+                    className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: 1 }}
                   >
                     <motion.p
-                      className=" hover:cursor-pointer rounded-lg bg-light p-2 px-8 text-dark text-xl font-bold"
+                      className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
                       whileHover={{ scale: 1.1 }}
                       transition={{ type: "spring", bounce: 0.4 }}
                     >
@@ -185,8 +185,8 @@ const Projects = () => {
 
               <motion.div
                 className="relative dark:bg-light bg-dark shadow-md border border-gray-950 dark:border-gray-200 rounded-lg max-w-sm max-h-[580px] mb-5 flex flex-col"
-                whileHover={{ scale: 1.1 }}
-                transition={{ type: "spring", bounce: 0.4 }}
+                // whileHover={{ scale: 1.1 }}
+                // transition={{ type: "spring", bounce: 0.4 }}
               >
                 <div className="relative rounded-t-lg overflow-hidden min-h-[200px]">
                   <Image
@@ -215,12 +215,12 @@ const Projects = () => {
                     </li>
                   </ul>
                   <motion.div
-                    className="hover:cursor-default flex justify-center items-center h-full absolute inset-0 bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
+                    className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
                     initial={{ opacity: 0 }}
                     whileHover={{ opacity: 1 }}
                   >
                     <motion.p
-                      className=" hover:cursor-pointer rounded-lg bg-light p-2 px-8 text-dark text-xl font-bold"
+                      className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
                       whileHover={{ scale: 1.1 }}
                       transition={{ type: "spring", bounce: 0.4 }}
                     >

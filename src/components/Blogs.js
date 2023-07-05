@@ -36,8 +36,8 @@ const Blogs = () => {
                   <motion.div
                     key={blog.guid}
                     className="relative dark:bg-light bg-dark shadow-md border border-gray-950 dark:border-gray-200 rounded-lg max-w-sm max-h-[300px] mb-5 flex flex-col"
-                    whileHover={{ scale: 1.1 }}
-                    transition={{ type: "spring", bounce: 0.4 }}
+                    // whileHover={{ scale: 1.1 }}
+                    // transition={{ type: "spring", bounce: 0.4 }}
                   >
                     <div className="relative rounded-t-lg overflow-hidden min-h-[210px]">
                       <Image
@@ -54,19 +54,12 @@ const Blogs = () => {
                         {blog.title}
                       </h5>
                       <motion.div
-                        className="hover:cursor-default flex justify-center items-center h-full absolute inset-0 bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
+                        className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
                         initial={{ opacity: 0 }}
                         whileHover={{ opacity: 1 }}
                       >
-                        {/* <a
-                            className="dark:text-light text-dark dark:bg-dark bg-light dark:hover:bg-light hover:bg-dark dark:hover:text-dark hover:text-light border-2 border-transparent dark:hover:border-dark border-light font-medium rounded-lg text-sm px-3 py-2 text-center items-center"
-                            href={blog.link}
-                            target="_blank"
-                          >
-                            Read more
-                          </a> */}
                         <motion.p
-                          className=" hover:cursor-pointer rounded-lg bg-light p-2 px-8 text-dark text-xl font-bold"
+                          className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
                           whileHover={{ scale: 1.1 }}
                           transition={{ type: "spring", bounce: 0.4 }}
                         >
