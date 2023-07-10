@@ -48,15 +48,15 @@ const Experience = () => {
                   position="Backend Developer"
                   company="ZURU Tech"
                   time="May 2023 - July 2023"
-                  address="Unknown Location"
+                  address="Ahmedabad, Gujarat, India"
                   work="Worked on server-side logic, created REST APIs, worked with databases,
-                    collaborated with cross-functional teams, and troubleshooted and debugged issues."
+                    collaborated with cross-functional teams, also troubleshooted and debugged issues."
                 />
                 <Details
                   position="Data Analyst"
                   company="Technocolabs Softwares"
                   time="May 2022 - June 2022"
-                  address="Unknown Location"
+                  address="Online"
                   work="Completed a minor project on Bigmart sales prediction and a major project on H1B visa approval prediction.
                     Developed skills in exploratory data analysis, feature engineering, machine learning model building, and deployment on live server."
                 />
