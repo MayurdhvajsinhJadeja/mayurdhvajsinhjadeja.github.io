@@ -4,7 +4,7 @@ import Layout from './Layout'
 const About = () => {
   
   return (
-    <main className="flex w-full h-screen flex-col items-center justify-center">
+    <main className="flex w-full xl:h-full flex-col items-center justify-center ">
         <Layout classname="pt-8">
           <div className="my-8 w-full">
             <div className="flex flex-col items-start justify-start">

@@ -34,10 +34,10 @@ const Home = () => {
         <meta name="description" content="portfolio" />
       </Head>
       <TransitionEffect />
-      <main className="flex items-center text-dark w-full min-h-screen">
+      <main className="flex items-center text-dark w-full min-h-screen ">
         <Layout classname="pt-0">
-          <div className="flex w-full items-center pt-0 pb-0">
-            <div className=" flex justify-center align-middle items-center w-60 h-60 dark:border-white bg-zinc-500 border-dark rounded-full border-4">
+          <div className="w-full items-center pt-0 pb-0 xl:flex">
+            <div className="w-44 ml-[10%] xl:ml-5 h-44 flex justify-center align-middle items-center xl:w-60 xl:h-60 dark:border-white bg-zinc-500 border-dark rounded-full border-4">
               {/* <div className="w-full bg-white"></div> */}
               <Image
                 priority
@@ -47,11 +47,17 @@ const Home = () => {
                 className=" w-11/12  height-auto  rounded-full"
               />
             </div>
-            <div id="hero" className="hero-section w-4/5 mb-6 ml-4 mr-0">
-              <div className="container">
-                <h2 className="text-dark/75 dark:text-light/75 text-6xl leading-normal">
+            <div
+              id="hero"
+              className="hero-section xl:w-4/5 mb-6 xl:ml-4 xl:mr-0"
+            >
+              <div className="w-[90%] ml-3 container">
+                <h2 className="text-dark/75 dark:text-light/75 xl:text-6xl leading-normal xs:text-sm">
                   Hi, I&apos;m{" "}
-                  {showMayurdhvaj ? (
+                  <p className="dark:text-light text-dark font-bold">
+                    Mayurdhvajsinh Jadeja
+                  </p>
+                  {/* {showMayurdhvaj ? (
                     <TypeAnimation
                       sequence={["Mayurdhvajsinh Jadeja."]}
                       wrapper="span"
@@ -63,56 +69,62 @@ const Home = () => {
                         fontStyle: "italic",
                       }}
                     />
-                  ) : null}
+                  ) : null} */}
                 </h2>
                 <h3
                   className={`text-dark/75 dark:text-light/75 ${
                     showWebDev ? "show" : ""
-                  } text-5xl`}
+                  } xl:text-5xl xs:sm `}
                 >
-                  I am passionate about{" "}
-                  {showWebDev ? (
-                    <TypeAnimation
-                      sequence={[
-                        "Data Science.",
-                        1000,
-                        "AI-ML.",
-                        1000,
-                        "WebDev.",
-                        1000,
-                      ]}
-                      wrapper="span"
-                      cursor={cursorVisible}
-                      className="dark:text-light text-dark"
-                      repeat={Infinity}
-                      style={{
-                        display: "inline-block",
-                        fontWeight: "bold",
-                        fontStyle: "italic",
-                      }}
-                    />
-                  ) : null}
+                  <div className="xl:flex">
+                    <div>I&apos;m passionate&nbsp;</div>
+                    <div>
+                      about{" "}
+                      {showWebDev ? (
+                        <TypeAnimation
+                          sequence={[
+                            "Data Science.",
+                            1000,
+                            "AI-ML.",
+                            1000,
+                            "WebDev.",
+                            1000,
+                          ]}
+                          wrapper="span"
+                          cursor={cursorVisible}
+                          className="dark:text-light text-dark"
+                          repeat={Infinity}
+                          style={{
+                            display: "inline-block",
+                            fontWeight: "bold",
+                            fontStyle: "italic",
+                          }}
+                        />
+                      ) : null}
+                    </div>
+                  </div>
                 </h3>
-                <div className="flex items-center self-start mt-3">
-                  <Link
-                    href="/Resume-Mayurdhvajsinh-Jadeja.pdf"
-                    target={"_blank"}
-                    className="flex items-center bg-dark text-light p-1.5 px-6 rounded-lg text-lg font-semibold
-                  hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark 
-                  dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light"
+                <div className="flex flex-col items-center mt-3 xl:flex-row xl:items-center xl:self-start">
+                  <a
+                    href="/MayurdhvajsinhJadeja.pdf"
+                    target="_blank"
+                    className="flex items-center justify-center  w-full xl:w-auto bg-dark text-light p-2 xl:px-6 rounded-lg text-lg font-semibold
+                    hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark
+                    dark:bg-light dark:text-dark dark:hover:bg-dark dark:hover:text-light dark:hover:border-light"
                   >
-                    Resume
-                    <LinkArrow className={"w-6 ml-1"} />
-                  </Link>
-                  <Link
+                    <p className="relative mr-6">Resume</p>
+                    <LinkArrow className="absolute w-6 ml-20 " />
+                  </a>
+
+                  <a
                     href="mailto:mayurdhvajsinhjadeja123@gmail.com"
-                    target={"_blank"}
-                    className="flex items-center bg-light text-dark p-1.5 mx-2 px-10 rounded-lg text-lg font-semibold
+                    target="_blank"
+                    className="flex items-center justify-center  w-full xl:w-auto mt-2 xl:mt-0 xl:mx-2 bg-light text-dark p-2 xl:px-10 rounded-lg text-lg font-semibold
                     hover:bg-dark hover:text-light border-2 border-solid border-dark hover:border-light
-                    dark:bg-dark dark:text-light dark:hover:bg-light dark:hover:text-dark dark:border-light dark:hover:border-dark"
+                    dark:bg-dark dark:text-light dark:hover:bg-light dark:hover:text-dark hover:font-semibold dark:border-light dark:hover:border-dark"
                   >
                     Contact
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
@@ -121,5 +133,5 @@ const Home = () => {
       </main>
     </>
   );
-}
+};
 export default Home;

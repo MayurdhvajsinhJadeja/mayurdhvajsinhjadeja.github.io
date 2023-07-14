@@ -14,18 +14,18 @@ const montserrat = Montserrat({
 export default function App({ Component, pageProps }) {
   const router = useRouter();
   return (
-    <>
+    <div className="portfolio-container">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen`}>
+      <main className={`${montserrat.variable} font-mont bg-light dark:bg-dark w-full min-h-screen no-scrollbar`}>
         <Navbar />
         <AnimatePresence mode="wait">
           <Component key={router.asPath} {...pageProps} />
         </AnimatePresence>
         <Footer/>
       </main>
-    </>
+    </div>
   );
 }

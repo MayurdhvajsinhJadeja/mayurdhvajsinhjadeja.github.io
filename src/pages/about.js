@@ -36,7 +36,7 @@ const AboutPage = () => {
       
       <About />
       <div
-        className={` scroll-down2 ml-[92%] mt-[-10%] ${
+        className={`scroll-down2 ml-[92%] mt-[-10%] ${
           showScroll ? 'show-scroll' : 'hide-scroll'
         }`}
         id="scroll-down"
