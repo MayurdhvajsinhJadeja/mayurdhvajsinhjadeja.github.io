@@ -44,7 +44,7 @@ const Home = () => {
                 src={profilePic}
                 alt="Mayurdhvaj"
                 // className=" w-11/12  height-11/12 shadow-2xl border-4 border-double border-dark rounded-full dark:border-white"
-                className=" w-11/12  height-auto  rounded-full"
+                className=" w-11/12  height-auto  rounded-full "
               />
             </div>
             <div

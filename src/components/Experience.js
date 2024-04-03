@@ -41,16 +41,16 @@ const Experience = () => {
             <div ref={ref} className="w-[75%] mx-auto relative">
               <motion.div
                 style={{ scaleY: scrollYProgress }}
-                className="absolute left-[35px] top-1 w-[4px] h-[310px] bg-dark origin-top dark:bg-light"
+                className="absolute left-[35px] top-1 w-[4px] h-[240px] bg-dark origin-top dark:bg-light"
               />
               <ul className="w-full flex flex-col items-start justify-between ml-4">
                 <Details
-                  position="Backend Developer"
+                  position="Junior Software Engineer"
                   company="ZURU Tech"
-                  time="May 2023 - July 2023"
+                  time="May 2023 - Ongoing"
                   address="Ahmedabad, Gujarat, India"
-                  work="Worked on server-side logic, created REST APIs, worked with databases,
-                    collaborated with cross-functional teams, also troubleshooted and debugged issues."
+                  work="Working on server-side logic, REST APIs,  databases,
+                    collaborating with cross-functional teams"
                 />
                 <Details
                   position="Data Analyst"

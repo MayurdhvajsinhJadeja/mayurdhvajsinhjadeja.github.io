@@ -5,6 +5,7 @@ import KanhaSays from "../../public/images/projects/KanhaSays.png";
 import SignToText from "../../public/images/projects/SignToText.png";
 import AlumniPortal from "../../public/images/projects/AlumniPortal.png";
 import Baatein from "../../public/images/projects/Baatein.png";
+import DevLipi from "../../public/images/projects/DevLipi.png";
 
 const Projects = () => {
   return (
@@ -16,6 +17,55 @@ const Projects = () => {
               My Projects
             </h2>
             <div className="flex flex-wrap justify-between">
+
+            <motion.div
+                className="relative dark:bg-light bg-dark shadow-md border border-gray-950 dark:border-gray-200 rounded-lg max-w-sm max-h-[580px] mb-5 flex flex-col"
+                // whileHover={{ scale: 1.1 }}
+                // transition={{ type: "spring", bounce: 0.4 }}
+              >
+                <div className="relative rounded-t-lg overflow-hidden min-h-[200px]">
+                  <Image
+                    unoptimized
+                    src={DevLipi}
+                    alt="thumbnail"
+                    width={400}
+                    height={400}
+                    className=" min-h-full"
+                  />
+                </div>
+                <div className="p-5 flex flex-col">
+                  <h5 className="dark:text-dark text-light font-bold text-2xl tracking-tight line-clamp-1">
+                    DevLipi
+                  </h5>
+                  <ul className="list-disc dark:text-dark text-light font-medium text-md tracking-tight p-4">
+                    <li>
+                    DevLipi is crafted with a backend powered by JavaScript, ensuring a robust foundation. It functions as a interpreted language, allowing step-by-step code execution.
+                    </li>
+                    <li>
+                     The development of DevLipi centers around three key components: Lexer, Parser, and Interpreter. These components work in harmony to process and execute the DevLipi code. 
+                    </li>
+                  </ul>
+                  <motion.div
+                    className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
+                    initial={{ opacity: 0 }}
+                    whileHover={{ opacity: 1 }}
+                  >
+                    <motion.p
+                      className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
+                      whileHover={{ scale: 1.1 }}
+                      transition={{ type: "spring", bounce: 0.4 }}
+                    >
+                      <a
+                        href={`https://devlipi-mj.github.io`}
+                        target="_blank"
+                      >
+                        View Live
+                      </a>
+                    </motion.p>
+                  </motion.div>
+                </div>
+              </motion.div>
+
               <div
                 className="relative dark:bg-light bg-dark shadow-md border border-gray-950 dark:border-gray-200 rounded-lg max-w-sm max-h-[580px] mb-5 flex flex-col"
                 // whileHover={{ scale: 1.1 }}
