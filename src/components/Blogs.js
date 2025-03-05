@@ -34,7 +34,7 @@ const Blogs = () => {
       <Layout classname="pt-8">
         <div className="my-8 w-full">
           <div className="flex flex-col justify-start">
-            <h2 className="mb-8 text-6xl font-bold uppercase text-light dark:text-dark">
+            <h2 className="mb-8 text-6xl font-bold uppercase text-dark dark:text-light">
               My Blogs
             </h2>
 
