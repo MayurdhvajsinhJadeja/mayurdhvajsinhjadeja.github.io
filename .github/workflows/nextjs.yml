@@ -81,6 +81,11 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
+      - uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts  # Name for the artifact
+          path: build/  # Directory containing the build artifacts
+          if-no-files-found: error  # Fail the workflow if no files are found to upload
 
   # Deployment job
   deploy:
