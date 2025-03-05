@@ -20,8 +20,6 @@ const Projects = () => {
 
             <motion.div
                 className="relative dark:bg-light bg-dark shadow-md border border-gray-950 dark:border-gray-200 rounded-lg max-w-sm max-h-[580px] mb-5 flex flex-col"
-                // whileHover={{ scale: 1.1 }}
-                // transition={{ type: "spring", bounce: 0.4 }}
               >
                 <div className="relative rounded-t-lg overflow-hidden min-h-[200px]">
                   <Image
@@ -30,41 +28,39 @@ const Projects = () => {
                     alt="thumbnail"
                     width={400}
                     height={400}
-                    className=" min-h-full"
+                    className="min-h-full"
                   />
                 </div>
-                <div className="p-5 flex flex-col">
-                  <h5 className="dark:text-dark text-light font-bold text-2xl tracking-tight line-clamp-1">
-                    DevLipi
-                  </h5>
-                  <ul className="list-disc dark:text-dark text-light font-medium text-md tracking-tight p-4">
+                <div className="p-5 flex flex-col flex-grow">
+                  <div className="flex items-center justify-between">
+                    <h5 className="dark:text-dark text-light font-bold text-2xl tracking-tight line-clamp-1">
+                      DevLipi
+                    </h5>
+                    <a
+                      href="https://devlipi-mj.github.io"
+                      target="_blank"
+                      className="rounded-lg border-2 border-dark bg-light text-dark px-4 py-1 text-sm font-semibold 
+                                hover:bg-dark hover:text-light hover:border-light 
+                                dark:border-light dark:bg-dark dark:text-light 
+                                dark:hover:bg-light dark:hover:text-dark dark:hover:border-dark 
+                                transition duration-300"
+                    >
+                      View Live
+                    </a>
+                  </div>
+
+                  <ul className="list-disc dark:text-dark text-light font-medium text-md tracking-tight p-4 flex-grow">
                     <li>
-                    DevLipi is crafted with a backend powered by JavaScript, ensuring a robust foundation. It functions as a interpreted language, allowing step-by-step code execution.
+                      DevLipi is crafted with a backend powered by JavaScript, ensuring a robust foundation. It functions as an interpreted language, allowing step-by-step code execution.
                     </li>
                     <li>
-                     The development of DevLipi centers around three key components: Lexer, Parser, and Interpreter. These components work in harmony to process and execute the DevLipi code. 
+                      The development of DevLipi centers around three key components: Lexer, Parser, and Interpreter. These components work in harmony to process and execute the DevLipi code.
                     </li>
                   </ul>
-                  <motion.div
-                    className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                  >
-                    <motion.p
-                      className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", bounce: 0.4 }}
-                    >
-                      <a
-                        href={`https://devlipi-mj.github.io`}
-                        target="_blank"
-                      >
-                        View Live
-                      </a>
-                    </motion.p>
-                  </motion.div>
                 </div>
+
               </motion.div>
+
 
               <div
                 className="relative dark:bg-light bg-dark shadow-md border border-gray-950 dark:border-gray-200 rounded-lg max-w-sm max-h-[580px] mb-5 flex flex-col"
@@ -81,10 +77,23 @@ const Projects = () => {
                     className=" min-h-full"
                   />
                 </div>
-                <div className="p-5 flex flex-col">
+                <div className="p-5 flex flex-col flex-grow">
+                  <div className="flex items-center justify-between">
                   <h5 className="dark:text-dark text-light font-bold text-2xl tracking-tight line-clamp-1">
                     KanhaSays
                   </h5>
+                  <a
+                      href="https://github.com/MayurdhvajsinhJadeja/KanhaSays"
+                      target="_blank"
+                      className="rounded-lg border-2 border-dark bg-light text-dark px-4 py-1 text-sm font-semibold 
+                                hover:bg-dark hover:text-light hover:border-light 
+                                dark:border-light dark:bg-dark dark:text-light 
+                                dark:hover:bg-light dark:hover:text-dark dark:hover:border-dark 
+                                transition duration-300"
+                    >
+                      View GitHub
+                    </a>
+                  </div>
                   <ul className="list-disc dark:text-dark text-light font-medium text-md tracking-tight p-4">
                     <li>
                       NLP techniques analyze user input and understand question
@@ -102,24 +111,6 @@ const Projects = () => {
                       motivate the person.
                     </li>
                   </ul>
-                  <motion.div
-                    className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                  >
-                    <motion.p
-                      className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", bounce: 0.4 }}
-                    >
-                      <a
-                        href={`https://github.com/MayurdhvajsinhJadeja/KanhaSays`}
-                        target="_blank"
-                      >
-                        View on Github
-                      </a>
-                    </motion.p>
-                  </motion.div>
                 </div>
               </div>
               <motion.div
@@ -137,10 +128,23 @@ const Projects = () => {
                     className=" min-h-full"
                   />
                 </div>
-                <div className="p-5 flex flex-col">
+                <div className="p-5 flex flex-col flex-grow">
+                  <div className="flex items-center justify-between">
                   <h5 className="dark:text-dark text-light font-bold text-2xl tracking-tight line-clamp-1">
                     Baatein
                   </h5>
+                  <a
+                      href="https://github.com/MayurdhvajsinhJadeja/Baatein"
+                      target="_blank"
+                      className="rounded-lg border-2 border-dark bg-light text-dark px-4 py-1 text-sm font-semibold 
+                                hover:bg-dark hover:text-light hover:border-light 
+                                dark:border-light dark:bg-dark dark:text-light 
+                                dark:hover:bg-light dark:hover:text-dark dark:hover:border-dark 
+                                transition duration-300"
+                    >
+                      View Github
+                    </a>
+                  </div>
                   <ul className="list-disc dark:text-dark text-light font-medium text-md tracking-tight p-4">
                     <li>
                       Baatein is a Node.js and Socket.io based chat application
@@ -157,24 +161,7 @@ const Projects = () => {
                       conversations with other users who are also logged in.
                     </li>
                   </ul>
-                  <motion.div
-                    className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                  >
-                    <motion.p
-                      className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", bounce: 0.4 }}
-                    >
-                      <a
-                        href={`https://github.com/MayurdhvajsinhJadeja/Baatein`}
-                        target="_blank"
-                      >
-                        View on Github
-                      </a>
-                    </motion.p>
-                  </motion.div>
+                  
                 </div>
               </motion.div>
 
@@ -193,43 +180,39 @@ const Projects = () => {
                     className=" min-h-full"
                   />
                 </div>
-                <div className="p-5 flex flex-col">
-                  <h5 className="dark:text-dark text-light font-bold text-2xl tracking-tight line-clamp-2">
-                    Sign Language to Text & Speech Converter:
-                  </h5>
-                  <ul className="list-disc dark:text-dark text-light font-medium text-md tracking-tight p-4">
-                    <li>
-                      Used Machine Learning algorithms to detect hand signs in
-                      real-time using computer vision techniques.
-                    </li>
-                    <li>
-                      The algorithm was trained on a self collected video
-                      dataset of hand signs.
-                    </li>
-                    <li>
-                      Once a sign is recognized, the corresponding text can be
-                      displayed on a screen or spoken aloud using text-to-speech
-                      technology
-                    </li>
-                  </ul>
-                  <motion.div
-                    className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                  >
-                    <motion.p
-                      className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", bounce: 0.4 }}
+                <div className="p-5 flex flex-col flex-growl">
+                  <div className="flex items-center justify-between">
+                    <h5 className="dark:text-dark text-light font-bold text-2xl tracking-tight line-clamp-2">
+                      Sign-To-Text:
+                    </h5>
+                    <a
+                      href="https://github.com/MayurdhvajsinhJadeja/Sign-to-Text-Converter"
+                      target="_blank"
+                      className="rounded-lg border-2 border-dark bg-light text-dark px-4 py-1 text-sm font-semibold 
+                                hover:bg-dark hover:text-light hover:border-light 
+                                dark:border-light dark:bg-dark dark:text-light 
+                                dark:hover:bg-light dark:hover:text-dark dark:hover:border-dark 
+                                transition duration-300"
                     >
-                      <a
-                        href={`https://github.com/MayurdhvajsinhJadeja/Sign-to-Text-Converter`}
-                        target="_blank"
-                      >
-                        View on Github
-                      </a>
-                    </motion.p>
-                  </motion.div>
+                      View GitHub
+                    </a>
+                  </div>
+                    <ul className="list-disc dark:text-dark text-light font-medium text-md tracking-tight p-4">
+                      <li>
+                        Used Machine Learning algorithms to detect hand signs in
+                        real-time using computer vision techniques.
+                      </li>
+                      <li>
+                        The algorithm was trained on a self collected video
+                        dataset of hand signs.
+                      </li>
+                      <li>
+                        Once a sign is recognized, the corresponding text can be
+                        displayed on a screen or spoken aloud using text-to-speech
+                        technology
+                      </li>
+                    </ul>
+                  
                 </div>
               </motion.div>
 
@@ -248,10 +231,23 @@ const Projects = () => {
                     className=" min-h-full"
                   />
                 </div>
-                <div className="p-5 flex flex-col">
+                <div className="p-5 flex flex-col flex-grow">
+                  <div className="flex items-center justify-between">
                   <h5 className="dark:text-dark text-light font-bold text-2xl tracking-tight line-clamp-1">
                     Alumni Portal
                   </h5>
+                  <a
+                      href="https://github.com/MayurdhvajsinhJadeja/Alumni-Portal"
+                      target="_blank"
+                      className="rounded-lg border-2 border-dark bg-light text-dark px-4 py-1 text-sm font-semibold 
+                                hover:bg-dark hover:text-light hover:border-light 
+                                dark:border-light dark:bg-dark dark:text-light 
+                                dark:hover:bg-light dark:hover:text-dark dark:hover:border-dark 
+                                transition duration-300"
+                    >
+                      View GitHub
+                    </a>
+                  </div>
                   <ul className="list-disc dark:text-dark text-light font-medium text-md tracking-tight p-4">
                     <li>
                       Developed a web portal using HTML, CSS, JavaScript, and
@@ -264,24 +260,7 @@ const Projects = () => {
                       about alumni.
                     </li>
                   </ul>
-                  <motion.div
-                    className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
-                    initial={{ opacity: 0 }}
-                    whileHover={{ opacity: 1 }}
-                  >
-                    <motion.p
-                      className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
-                      whileHover={{ scale: 1.1 }}
-                      transition={{ type: "spring", bounce: 0.4 }}
-                    >
-                      <a
-                        href={`https://github.com/MayurdhvajsinhJadeja/Alumni-Portal`}
-                        target="_blank"
-                      >
-                        View on Github
-                      </a>
-                    </motion.p>
-                  </motion.div>
+                  
                 </div>
               </motion.div>
 

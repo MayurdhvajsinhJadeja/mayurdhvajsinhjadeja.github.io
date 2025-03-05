@@ -17,7 +17,7 @@ const Footer = () => {
             transition={{ type: "spring", bounce: 0.6 }}
           >
             <Link
-              href="https://www.twitter.com/its_mbj__"
+              href="https://x.com/QubitSuperposed"
               className="xl:mx-20 mx-10 "
               target={"_blank"}
             >
@@ -30,7 +30,7 @@ const Footer = () => {
             transition={{ type: "spring", bounce: 0.6 }}
           >
             <Link
-              href="https://www.instagram.com/mayurdhvajsinh_jadeja_/"
+              href="https://www.instagram.com/qubit_18/"
               className="xl:mx-20 mx-10 "
               target={"_blank"}
             >

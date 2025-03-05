@@ -12,46 +12,19 @@ const About = () => {
                 About Me
               </h2>
               <p className="font-medium text-lg dark:text-light/90">
-                Hey there! My name is Mayurdhvaj, and I&apos;m from the charming
-                town of Gondal in Gujarat. I have a range of interests that
-                revolve around Data Science, AI-ML, and the exciting world of
-                Web Development.
+              Hey there! I am Mayurdhvaj, a passionate Web Developer and AI/ML enthusiast from Gondal, Gujarat. My expertise lies in Data Science, AI-ML, and Web Development, where I bridge the gap between data-driven insights and cutting-edge web technologies.
               </p>
               <p className="font-medium text-lg mt-4 dark:text-light/90">
-                When it comes to Data Science, I love diving into complex
-                datasets and uncovering valuable insights. I use Python as my
-                go-to tool for working with data, and I&apos;ve completed
-                several projects where I&apos;ve analyzed data, built machine
-                learning models, and made predictions. It&apos;s incredibly
-                satisfying to transform raw data into meaningful solutions that
-                can have a real impact.
+              I love analyzing complex datasets, uncovering patterns, and building machine learning models to solve real-world challenges. With Python as my primary tool, I have worked on predictive analytics, statistical modeling, deep learning, and NLP.
               </p>
               <p className="font-medium text-lg mt-4 dark:text-light/90">
-                AI-ML is an integral part of my Data Science journey. I&apos;m
-                captivated by the endless possibilities that artificial
-                intelligence and machine learning offer. I constantly explore
-                the latest algorithms and techniques to develop intelligent
-                systems that can learn, adapt, and make accurate predictions.
-                Through my projects, I&apos;ve gained hands-on experience in
-                applying AI-ML to solve complex problems.
+              I specialize in modern web technologies like HTML, CSS, JavaScript, Node.js, React.js, and Next.js, developing seamless, responsive, and visually engaging applications. I enjoy crafting web solutions that not only look great but also deliver a smooth user experience.
               </p>
               <p className="font-medium text-lg mt-4 dark:text-light/90">
-                Outside the world of technology, I find joy in other activities
-                that bring balance to my life. Chess is a game that allows me to
-                exercise my strategic thinking, while singing and playing the
-                guitar provide a creative outlet. And of course, who
-                doesn&apos;t enjoy the occasional video game session to unwind
-                and have some fun?
+              I’m always exploring the latest trends, whether it’s LLMs, deep learning, or emerging web frameworks.
               </p>
               <p className="font-medium text-lg my-4 dark:text-light/90">
-                In the realm of Web Development, I&apos;m well-versed in a
-                variety of technologies, including HTML, CSS, JavaScript,
-                Node.js, React.js, and Next.js. I enjoy creating visually
-                appealing and user-friendly websites that seamlessly blend
-                functionality and aesthetics.
-              </p>
-              <p className="font-medium text-lg dark:text-light/90">
-                Feel free to explore my portfolio and get in touch!
+              When I’m not coding, you’ll find me playing chess, watching movies or animes and playing video games. Let’s connect, collaborate, and innovate! 🚀
               </p>
             </div>
             

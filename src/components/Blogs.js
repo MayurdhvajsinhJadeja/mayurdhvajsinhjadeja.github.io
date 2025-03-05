@@ -3,74 +3,107 @@ import Layout from "./Layout";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+const extractImageFromContent = (content) => {
+  const imgRegex = /<img[^>]+src=["'](https?:\/\/[^"']+)["']/;
+  const match = content.match(imgRegex);
+  return match ? match[1] : "/images/medium.png"; // Use fallback image
+};
+
 const Blogs = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (data !== undefined && data !== null) {
-      setLoading(false);
-    }
-  }, [data]);
-
-  useEffect(() => {
     fetch(
       "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@mayurdhvajsinhjadeja"
-    ).then(async (res) => {
-      const dataa = await res.json();
-      setData(dataa);
-    });
+    )
+      .then(async (res) => {
+        const dataa = await res.json();
+        console.log("API Response:", dataa); // Debug API response
+        setData(dataa);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error fetching blogs:", error);
+        setLoading(false);
+      });
   }, []);
 
   return (
-    <main className="flex w-full h-fit flex-col items-center justify-center ">
+    <main className="flex w-full h-fit flex-col items-center justify-center">
       <Layout classname="pt-8">
         <div className="my-8 w-full">
           <div className="flex flex-col justify-start">
             <h2 className="mb-8 text-6xl font-bold uppercase text-dark/75 dark:text-light">
               My Blogs
             </h2>
-            <div className="flex flex-wrap justify-between">
-              {!loading &&
-                data.items.map((blog) => (
-                  <motion.div
-                    key={blog.guid}
-                    className="relative dark:bg-light bg-dark shadow-md border border-gray-950 dark:border-gray-200 rounded-lg max-w-sm max-h-[300px] mb-5 flex flex-col"
-                    // whileHover={{ scale: 1.1 }}
-                    // transition={{ type: "spring", bounce: 0.4 }}
-                  >
-                    <div className="relative rounded-t-lg overflow-hidden min-h-[210px]">
-                      <Image
-                        unoptimized
-                        src={blog.thumbnail}
-                        alt="thumbnail"
-                        width={400}
-                        height={400}
-                        className="min-h-full"
-                      />
+
+            {/* Horizontal Scroll Container */}
+            <div className="flex overflow-x-auto space-x-6 w-full px-4 py-2 scrollbar-hide">
+              {loading
+                ? // Skeleton Loader
+                  [...Array(4)].map((_, index) => (
+                    <div
+                      key={index}
+                      className="relative bg-gray-200 dark:bg-gray-700 shadow-md border border-gray-950 dark:border-gray-200 rounded-lg min-w-[300px] max-w-[320px] flex flex-col animate-pulse"
+                    >
+                      <div className="relative rounded-t-lg overflow-hidden h-48 bg-gray-300 dark:bg-gray-600"></div>
+                      <div className="p-5 flex flex-col pt-3">
+                        <div className="h-5 bg-gray-400 dark:bg-gray-500 rounded w-3/4 mb-2"></div>
+                        <div className="h-4 bg-gray-400 dark:bg-gray-500 rounded w-1/2"></div>
+                      </div>
                     </div>
-                    <div className="p-5 flex flex-col pt-3">
-                      <h5 className="dark:text-dark text-light font-bold text-2xl tracking-tight mb-2 line-clamp-2">
-                        {blog.title}
-                      </h5>
+                  ))
+                : // Blog Cards
+                  data?.items?.map((blog) => {
+                    const imageUrl = blog.thumbnail?.trim()
+                      ? blog.thumbnail
+                      : extractImageFromContent(blog.content);
+
+                    return (
                       <motion.div
-                        className="bg-light/80 hover:cursor-default flex justify-center items-center h-full absolute inset-0 dark:bg-dark/80 rounded-lg opacity-0 hover:opacity-10 transition-opacity duration-300"
-                        initial={{ opacity: 0 }}
-                        whileHover={{ opacity: 1 }}
-                      >
-                        <motion.p
-                          className=" hover:cursor-pointer rounded-lg bg-dark text-light p-2 px-8 text-xl font-bold hover:bg-light hover:text-dark dark:hover:bg-light dark:hover:text-dark"
-                          whileHover={{ scale: 1.1 }}
-                          transition={{ type: "spring", bounce: 0.4 }}
+                      key={blog.guid}
+                      className="relative dark:bg-dark bg-light shadow-md border-2 border-dark dark:border-light rounded-lg min-w-[300px] max-w-[320px] flex flex-col"
+                    >
+                      {/* Blog Image */}
+                      <div className="relative rounded-t-lg overflow-hidden h-48 border-b-2 border-dark dark:border-light">
+                        <Image
+                          unoptimized
+                          src={imageUrl}
+                          alt="Blog Thumbnail"
+                          width={400}
+                          height={400}
+                          className="w-full h-full object-cover"
+                          priority
+                        />
+                      </div>
+                    
+                      {/* Blog Content */}
+                      <div className="p-5 flex flex-col pt-3">
+                        <h5 className="dark:text-light text-dark font-bold text-lg tracking-tight mb-2 line-clamp-2">
+                          {blog.title}
+                        </h5>
+                    
+                        {/* Read Blog Button Below */}
+                        <a
+                          href={blog.link}
+                          target="_blank"
+                          className="mt-4 block text-center rounded-lg border-2 border-dark bg-dark text-light px-4 py-1 text-sm font-semibold 
+                                    hover:bg-light hover:text-dark hover:border-dark 
+                                    dark:border-light dark:bg-light dark:text-dark 
+                                    dark:hover:bg-dark dark:hover:text-light dark:hover:border-light 
+                                    transition duration-300"
                         >
-                          <a href={blog.link} target="_blank">
-                            Read Full Blog
-                          </a>
-                        </motion.p>
-                      </motion.div>
-                    </div>
-                  </motion.div>
-                ))}
+                          Read Full Blog
+                        </a>
+
+                      </div>
+                    </motion.div>
+                    
+
+
+                    );
+                  })}
             </div>
           </div>
         </div>

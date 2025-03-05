@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
-import profilePic from "../../public/images/profile/MayurdhvajProfile.png";
+import profilePic from "../../public/images/profile/1734603982723.png";
 import Link from "next/link";
 import { LinkArrow } from "../../public/All-Texts/Icons";
 import TransitionEffect from "@/components/TransitionEffect";
