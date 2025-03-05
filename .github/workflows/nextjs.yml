@@ -81,11 +81,12 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           path: ./out
-      - uses: actions/upload-artifact@v3.1.2
+      - name: Clear Cache
+        uses: actions/cache@v3
         with:
-          name: build-artifacts  # Name for the artifact
-          path: ./out  # Directory containing the build artifacts
-          if-no-files-found: error  # Fail the workflow if no files are found to upload
+          path: .next/cache
+          key: ${{ runner.os }}-nextjs-${{ github.run_id }}
+
 
   # Deployment job
   deploy:
